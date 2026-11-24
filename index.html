@@ -1,0 +1,1314 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>印象足拍 - 每日吃瓜 | 视频社区官方门户</title>
+<meta name="description" content="印象足拍是专注每日吃瓜的官方视频社区，汇聚原创高清内容与创作者生态，提供品牌故事、创作者访谈、专题企划与社区互动。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c1f2a'/%3E%3Ccircle cx='32' cy='32' r='16' fill='none' stroke='%23ff4d6d' stroke-width='4'/%3E%3Ccircle cx='32' cy='32' r='6' fill='%23ffb703'/%3E%3C/svg%3E">
+<style>
+:root{
+  --yxtp-bg:#f6f5f2;
+  --yxtp-ink:#1c1f2a;
+  --yxtp-ink-soft:#4a4f5e;
+  --yxtp-line:#ddd9d0;
+  --yxtp-card:#ffffff;
+  --yxtp-accent:#ff4d6d;
+  --yxtp-accent-deep:#d9264a;
+  --yxtp-gold:#ffb703;
+  --yxtp-dark:#20232e;
+  --yxtp-shadow:0 10px 30px rgba(28,31,42,.08);
+  --yxtp-radius:16px;
+  --yxtp-stick:104px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  background:var(--yxtp-bg);
+  color:var(--yxtp-ink);
+  font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,sans-serif;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block;}
+a{color:inherit;text-decoration:none;}
+button{font-family:inherit;cursor:pointer;}
+h1,h2,h3,h4,p{margin:0;}
+ul{margin:0;padding:0;list-style:none;}
+section{scroll-margin-top:var(--yxtp-stick);}
+.yxtp-wrap{width:min(1180px,92vw);margin:0 auto;}
+.yxtp-eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--yxtp-accent-deep);font-weight:700;
+}
+.yxtp-eyebrow::before{content:"";width:26px;height:2px;background:var(--yxtp-accent);}
+.yxtp-sec-head{
+  display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;
+  gap:14px;margin-bottom:28px;
+}
+.yxtp-sec-head h2{
+  font-size:clamp(23px,3vw,33px);line-height:1.28;letter-spacing:-.01em;margin-top:8px;font-weight:800;
+}
+.yxtp-sec-head p{max-width:520px;color:var(--yxtp-ink-soft);font-size:14.5px;}
+.yxtp-btn{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 22px;border-radius:999px;border:1px solid transparent;
+  background:var(--yxtp-accent);color:#fff;font-size:14px;font-weight:700;
+  transition:transform .18s ease,box-shadow .18s ease,background .18s ease;
+}
+.yxtp-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(255,77,109,.32);}
+.yxtp-btn--ghost{background:transparent;color:var(--yxtp-ink);border-color:var(--yxtp-line);}
+.yxtp-btn--ghost:hover{background:#fff;box-shadow:var(--yxtp-shadow);}
+.yxtp-btn--dark{background:var(--yxtp-dark);}
+.yxtp-btn--dark:hover{box-shadow:0 10px 22px rgba(32,35,46,.3);}
+
+/* ===== 吸顶：公告 + 页头 ===== */
+.yxtp-sticky{
+  position:sticky;top:0;z-index:80;
+}
+.yxtp-notice{
+  background:var(--yxtp-dark);color:#f2f0ea;font-size:13px;
+  padding:8px 0;border-bottom:1px solid rgba(255,255,255,.08);
+}
+.yxtp-notice__inner{
+  display:flex;align-items:center;gap:14px;flex-wrap:wrap;
+}
+.yxtp-notice__tag{
+  background:var(--yxtp-accent);color:#fff;font-size:11px;font-weight:800;
+  padding:2px 10px;border-radius:999px;letter-spacing:.08em;white-space:nowrap;
+}
+.yxtp-notice__list{display:flex;gap:22px;flex-wrap:wrap;overflow:hidden;}
+.yxtp-notice__list li{white-space:nowrap;opacity:.92;}
+.yxtp-notice__list li b{color:var(--yxtp-gold);font-weight:700;}
+.yxtp-header{
+  background:rgba(246,245,242,.94);backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--yxtp-line);
+}
+.yxtp-header__inner{
+  display:flex;align-items:center;gap:22px;padding:14px 0;
+}
+.yxtp-brand{display:flex;align-items:center;gap:11px;flex-shrink:0;}
+.yxtp-brand__mark{
+  width:42px;height:42px;border-radius:13px;background:var(--yxtp-dark);
+  display:grid;place-items:center;
+}
+.yxtp-brand__mark svg{width:24px;height:24px;}
+.yxtp-brand__text strong{display:block;font-size:17px;letter-spacing:.02em;line-height:1.2;}
+.yxtp-brand__text span{font-size:11px;letter-spacing:.2em;color:var(--yxtp-ink-soft);}
+.yxtp-nav{display:flex;gap:20px;margin-left:8px;flex-wrap:wrap;}
+.yxtp-nav a{font-size:14px;font-weight:600;color:var(--yxtp-ink-soft);padding:4px 0;position:relative;transition:color .18s;}
+.yxtp-nav a:hover{color:var(--yxtp-accent-deep);}
+.yxtp-nav a::after{
+  content:"";position:absolute;left:0;bottom:-2px;width:0;height:2px;
+  background:var(--yxtp-accent);transition:width .2s ease;
+}
+.yxtp-nav a:hover::after{width:100%;}
+.yxtp-header__tools{margin-left:auto;display:flex;align-items:center;gap:10px;}
+.yxtp-search{
+  display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--yxtp-line);
+  border-radius:999px;padding:7px 8px 7px 14px;min-width:220px;
+}
+.yxtp-search input{
+  border:none;outline:none;background:transparent;font-size:13.5px;width:100%;color:var(--yxtp-ink);
+}
+.yxtp-search button{
+  border:none;background:var(--yxtp-dark);color:#fff;border-radius:999px;
+  width:30px;height:30px;display:grid;place-items:center;flex-shrink:0;
+}
+.yxtp-search button:hover{background:var(--yxtp-accent);}
+.yxtp-search__tip{
+  font-size:12.5px;color:var(--yxtp-accent-deep);margin-top:6px;display:none;
+}
+.yxtp-search__tip.is-on{display:block;}
+.yxtp-burger{
+  display:none;border:1px solid var(--yxtp-line);background:#fff;border-radius:10px;
+  width:40px;height:40px;place-items:center;
+}
+.yxtp-burger span{display:block;width:18px;height:2px;background:var(--yxtp-ink);position:relative;}
+.yxtp-burger span::before,.yxtp-burger span::after{
+  content:"";position:absolute;left:0;width:18px;height:2px;background:var(--yxtp-ink);
+}
+.yxtp-burger span::before{top:-6px;}
+.yxtp-burger span::after{top:6px;}
+
+/* ===== 首屏：全幅主视觉背景 + 浮动文字 ===== */
+.yxtp-hero{
+  position:relative;color:#fff;overflow:hidden;isolation:isolate;
+  padding:clamp(48px,7vw,92px) 0 clamp(56px,7vw,96px);
+}
+.yxtp-hero__bg{position:absolute;inset:0;z-index:-2;width:100%;height:100%;object-fit:cover;}
+.yxtp-hero__veil{
+  position:absolute;inset:0;z-index:-1;
+  background:linear-gradient(100deg,rgba(18,20,28,.92) 0%,rgba(18,20,28,.72) 46%,rgba(18,20,28,.25) 100%);
+}
+.yxtp-hero__grid{
+  display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+  gap:clamp(24px,4vw,56px);align-items:center;
+}
+.yxtp-hero h1{
+  font-size:clamp(46px,8.4vw,92px);line-height:.98;font-weight:900;letter-spacing:.02em;
+  margin:10px 0 0;
+}
+.yxtp-hero h1 em{
+  display:block;font-style:normal;font-size:clamp(20px,3.2vw,30px);
+  letter-spacing:.3em;font-weight:700;color:var(--yxtp-gold);margin-top:14px;
+}
+.yxtp-hero__lead{
+  margin-top:22px;font-size:clamp(15px,1.6vw,17.5px);max-width:560px;color:#e6e3db;
+}
+.yxtp-hero__lead b{color:#fff;}
+.yxtp-hero__actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px;}
+.yxtp-hero__actions .yxtp-btn--ghost{color:#fff;border-color:rgba(255,255,255,.4);}
+.yxtp-hero__actions .yxtp-btn--ghost:hover{background:rgba(255,255,255,.12);color:#fff;}
+.yxtp-hero__live{
+  margin-top:26px;font-size:12.5px;letter-spacing:.14em;color:#bcb8ad;
+  display:flex;align-items:center;gap:9px;
+}
+.yxtp-dot{width:8px;height:8px;border-radius:50%;background:var(--yxtp-accent);box-shadow:0 0 0 0 rgba(255,77,109,.7);animation:yxtp-pulse 1.8s infinite;}
+@keyframes yxtp-pulse{
+  0%{box-shadow:0 0 0 0 rgba(255,77,109,.6);}
+  70%{box-shadow:0 0 0 12px rgba(255,77,109,0);}
+  100%{box-shadow:0 0 0 0 rgba(255,77,109,0);}
+}
+.yxtp-hero__panel{
+  background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.18);
+  border-radius:20px;padding:22px;backdrop-filter:blur(10px);
+}
+.yxtp-hero__panel h2{font-size:14px;letter-spacing:.18em;color:var(--yxtp-gold);text-transform:uppercase;}
+.yxtp-hero__panel p{font-size:14px;color:#ded9ce;margin-top:10px;}
+.yxtp-hero__panel ul{margin-top:14px;display:grid;gap:10px;}
+.yxtp-hero__panel li{
+  display:flex;align-items:center;gap:10px;font-size:13.5px;color:#f1eee7;
+  padding-bottom:10px;border-bottom:1px dashed rgba(255,255,255,.16);
+}
+.yxtp-hero__panel li:last-child{border-bottom:none;padding-bottom:0;}
+.yxtp-hero__panel li span{
+  font-family:ui-monospace,Menlo,monospace;font-size:11.5px;color:var(--yxtp-gold);
+  border:1px solid rgba(255,183,3,.45);border-radius:6px;padding:1px 7px;flex-shrink:0;
+}
+.yxtp-stats{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:30px;
+  max-width:520px;
+}
+.yxtp-stat{
+  border-left:2px solid var(--yxtp-accent);padding-left:13px;
+}
+.yxtp-stat strong{display:block;font-size:clamp(22px,2.6vw,28px);font-weight:800;line-height:1.2;}
+.yxtp-stat span{font-size:12px;color:#b9b4a8;letter-spacing:.06em;}
+
+/* ===== 通用板块 ===== */
+.yxtp-sec{padding:clamp(46px,6vw,74px) 0;}
+.yxtp-sec--alt{background:#fff;border-top:1px solid var(--yxtp-line);border-bottom:1px solid var(--yxtp-line);}
+
+/* 焦点区：一幅重点大图 + 文字列表 */
+.yxtp-focus{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(22px,3vw,40px);align-items:start;}
+.yxtp-focus__cover{
+  border-radius:var(--yxtp-radius);overflow:hidden;position:relative;background:var(--yxtp-dark);
+  box-shadow:var(--yxtp-shadow);
+}
+.yxtp-focus__cover img{aspect-ratio:16/10;width:100%;object-fit:cover;transition:transform .5s ease;}
+.yxtp-focus__cover:hover img{transform:scale(1.03);}
+.yxtp-focus__badge{
+  position:absolute;top:14px;left:14px;background:var(--yxtp-accent);color:#fff;
+  font-size:11.5px;font-weight:800;letter-spacing:.1em;padding:5px 12px;border-radius:999px;
+}
+.yxtp-focus__cap{padding:18px 20px 20px;}
+.yxtp-focus__cap h3{font-size:clamp(19px,2.2vw,24px);line-height:1.4;}
+.yxtp-focus__cap p{font-size:14px;color:var(--yxtp-ink-soft);margin-top:8px;}
+.yxtp-meta{display:flex;flex-wrap:wrap;gap:14px;font-size:12.5px;color:#8a8d99;margin-top:12px;}
+.yxtp-list{display:grid;gap:2px;}
+.yxtp-item{
+  display:grid;grid-template-columns:minmax(0,1fr) auto;gap:14px;
+  padding:16px 4px;border-bottom:1px solid var(--yxtp-line);align-items:start;
+}
+.yxtp-item:first-child{padding-top:0;}
+.yxtp-item h3{font-size:16.5px;line-height:1.5;font-weight:700;}
+.yxtp-item h3:hover{color:var(--yxtp-accent-deep);}
+.yxtp-item p{font-size:13.5px;color:var(--yxtp-ink-soft);margin-top:5px;}
+.yxtp-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:9px;}
+.yxtp-tag{
+  font-size:11.5px;color:var(--yxtp-accent-deep);background:rgba(255,77,109,.09);
+  border-radius:999px;padding:2px 10px;
+}
+.yxtp-tools{display:flex;gap:8px;align-items:center;flex-shrink:0;}
+.yxtp-ico{
+  border:1px solid var(--yxtp-line);background:#fff;border-radius:999px;
+  font-size:12.5px;color:var(--yxtp-ink-soft);padding:5px 11px;display:inline-flex;align-items:center;gap:5px;
+  transition:all .16s ease;
+}
+.yxtp-ico:hover{border-color:var(--yxtp-accent);color:var(--yxtp-accent-deep);}
+.yxtp-ico.is-on{background:var(--yxtp-accent);border-color:var(--yxtp-accent);color:#fff;}
+
+/* 视频三列卡片 */
+.yxtp-vgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.2vw,24px);}
+.yxtp-card{
+  background:var(--yxtp-card);border:1px solid var(--yxtp-line);border-radius:var(--yxtp-radius);
+  overflow:hidden;display:flex;flex-direction:column;transition:transform .2s ease,box-shadow .2s ease;
+}
+.yxtp-card:hover{transform:translateY(-4px);box-shadow:var(--yxtp-shadow);}
+.yxtp-card__cover{position:relative;background:var(--yxtp-dark);}
+.yxtp-card__cover img{aspect-ratio:16/9;width:100%;object-fit:cover;}
+.yxtp-card__play{
+  position:absolute;right:12px;bottom:12px;width:34px;height:34px;border-radius:50%;
+  background:rgba(255,255,255,.92);display:grid;place-items:center;color:var(--yxtp-dark);font-size:12px;
+}
+.yxtp-card__body{padding:16px 17px 18px;display:flex;flex-direction:column;gap:8px;flex:1;}
+.yxtp-card__body h3{font-size:16px;line-height:1.45;}
+.yxtp-card__body p{font-size:13px;color:var(--yxtp-ink-soft);}
+.yxtp-card__foot{margin-top:auto;display:flex;align-items:center;gap:10px;flex-wrap:wrap;justify-content:space-between;}
+.yxtp-avatar{
+  width:30px;height:30px;border-radius:50%;display:grid;place-items:center;
+  font-size:12.5px;font-weight:800;color:#fff;flex-shrink:0;
+}
+.yxtp-byline{display:flex;align-items:center;gap:8px;font-size:12.5px;color:var(--yxtp-ink-soft);}
+
+/* 专题 */
+.yxtp-topic{
+  background:#fff;border-radius:18px;border:1px solid var(--yxtp-line);
+  padding:clamp(20px,3vw,30px);
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(20px,3vw,36px);
+}
+.yxtp-topic__main h3{font-size:clamp(21px,2.6vw,27px);line-height:1.35;}
+.yxtp-topic__main p{font-size:14.5px;color:var(--yxtp-ink-soft);margin-top:10px;}
+.yxtp-status{
+  display:inline-flex;align-items:center;gap:7px;font-size:12px;font-weight:700;
+  color:#0f7a4d;background:rgba(15,122,77,.1);padding:3px 11px;border-radius:999px;margin-top:14px;
+}
+.yxtp-topic__list{display:grid;gap:12px;}
+.yxtp-topic__list li{
+  border-left:2px solid var(--yxtp-accent);padding-left:13px;font-size:14px;
+}
+.yxtp-topic__list li b{display:block;font-size:14.5px;}
+.yxtp-topic__list li span{font-size:12.5px;color:#8a8d99;}
+
+/* 作者双列简介 */
+.yxtp-authors{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.2vw,22px);}
+.yxtp-author{
+  background:#fff;border:1px solid var(--yxtp-line);border-radius:var(--yxtp-radius);
+  padding:20px;display:flex;gap:15px;transition:border-color .18s ease,box-shadow .18s ease;
+}
+.yxtp-author:hover{border-color:var(--yxtp-accent);box-shadow:var(--yxtp-shadow);}
+.yxtp-author__ava{width:52px;height:52px;border-radius:16px;flex-shrink:0;display:grid;place-items:center;font-weight:900;font-size:19px;color:#fff;}
+.yxtp-author h3{font-size:16.5px;}
+.yxtp-author__field{font-size:12px;color:var(--yxtp-accent-deep);font-weight:700;margin-top:2px;}
+.yxtp-author p{font-size:13px;color:var(--yxtp-ink-soft);margin-top:8px;}
+.yxtp-author__nums{display:flex;gap:16px;font-size:12px;color:#8a8d99;margin-top:10px;flex-wrap:wrap;}
+.yxtp-author__nums b{color:var(--yxtp-ink);}
+
+/* 评价双列 */
+.yxtp-reviews{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;}
+.yxtp-review{
+  background:#fff;border-radius:14px;padding:18px;border:1px solid var(--yxtp-line);
+  display:flex;flex-direction:column;gap:10px;
+}
+.yxtp-review:nth-child(3n+2){background:#fbfaf7;}
+.yxtp-review__top{display:flex;align-items:center;gap:9px;}
+.yxtp-review__top strong{font-size:13.5px;}
+.yxtp-review__top span{font-size:11.5px;color:#9a9ca6;margin-left:auto;}
+.yxtp-review p{font-size:13.5px;color:var(--yxtp-ink-soft);}
+.yxtp-stars{color:var(--yxtp-gold);font-size:12.5px;letter-spacing:.12em;}
+
+/* 解析长文 */
+.yxtp-essay{
+  background:#fff;border:1px solid var(--yxtp-line);border-radius:18px;
+  padding:clamp(22px,3.4vw,40px);
+}
+.yxtp-essay h3{font-size:clamp(17px,2vw,20px);margin-top:26px;padding-left:13px;border-left:3px solid var(--yxtp-accent);}
+.yxtp-essay h3:first-of-type{margin-top:16px;}
+.yxtp-essay p{font-size:14.5px;color:var(--yxtp-ink-soft);margin-top:10px;}
+.yxtp-essay p b{color:var(--yxtp-ink);}
+.yxtp-essay__lead{font-size:15px !important;color:var(--yxtp-ink) !important;}
+
+/* 动态 / FAQ / 合作 */
+.yxtp-dyn{display:grid;gap:2px;}
+.yxtp-dyn li{
+  display:grid;grid-template-columns:96px minmax(0,1fr);gap:16px;
+  padding:15px 4px;border-bottom:1px dashed var(--yxtp-line);align-items:baseline;
+}
+.yxtp-dyn li:last-child{border-bottom:none;}
+.yxtp-dyn time{font-family:ui-monospace,Menlo,monospace;font-size:12.5px;color:var(--yxtp-accent-deep);}
+.yxtp-dyn b{font-size:15px;font-weight:700;}
+.yxtp-dyn span{display:block;font-size:13px;color:var(--yxtp-ink-soft);margin-top:2px;}
+.yxtp-faq{display:grid;gap:10px;}
+.yxtp-faq details{
+  background:#fff;border:1px solid var(--yxtp-line);border-radius:12px;padding:0 18px;
+}
+.yxtp-faq details[open]{border-color:var(--yxtp-accent);}
+.yxtp-faq summary{
+  list-style:none;cursor:pointer;padding:15px 0;font-size:14.5px;font-weight:700;
+  display:flex;align-items:center;justify-content:space-between;gap:12px;
+}
+.yxtp-faq summary::-webkit-details-marker{display:none;}
+.yxtp-faq summary::after{content:"+";font-size:19px;color:var(--yxtp-accent);line-height:1;flex-shrink:0;}
+.yxtp-faq details[open] summary::after{content:"−";}
+.yxtp-faq details p{font-size:13.5px;color:var(--yxtp-ink-soft);padding-bottom:16px;margin-top:-4px;}
+.yxtp-partners{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:14px;}
+.yxtp-partner{
+  background:#fff;border:1px solid var(--yxtp-line);border-radius:12px;
+  padding:18px 14px;text-align:center;font-weight:800;font-size:14px;letter-spacing:.03em;
+  color:var(--yxtp-ink-soft);transition:all .18s ease;
+}
+.yxtp-partner:hover{color:var(--yxtp-ink);border-color:var(--yxtp-accent);transform:translateY(-3px);}
+.yxtp-partner small{display:block;font-size:11px;font-weight:500;letter-spacing:.1em;color:#a3a5ae;margin-top:5px;}
+
+/* 页脚 */
+.yxtp-footer{background:var(--yxtp-dark);color:#c9c6bd;padding:clamp(40px,5vw,60px) 0 26px;}
+.yxtp-footer__grid{
+  display:grid;grid-template-columns:minmax(0,1.3fr) repeat(2,minmax(0,.7fr));gap:clamp(22px,4vw,48px);
+}
+.yxtp-footer h3{color:#fff;font-size:14px;letter-spacing:.14em;margin-bottom:14px;}
+.yxtp-footer p{font-size:13px;line-height:1.9;}
+.yxtp-footer ul{display:grid;gap:8px;font-size:13px;}
+.yxtp-footer ul a:hover{color:var(--yxtp-gold);}
+.yxtp-footer__brand{display:flex;align-items:center;gap:11px;margin-bottom:14px;}
+.yxtp-footer__brand strong{color:#fff;font-size:17px;}
+.yxtp-footer__bottom{
+  margin-top:34px;padding-top:18px;border-top:1px solid rgba(255,255,255,.1);
+  display:flex;flex-wrap:wrap;gap:10px 22px;justify-content:space-between;
+  font-size:12px;color:#8f929c;
+}
+
+/* Toast / 弹窗 / 回顶 */
+.yxtp-toast{
+  position:fixed;left:50%;bottom:34px;transform:translate(-50%,20px);
+  background:var(--yxtp-dark);color:#fff;font-size:13.5px;padding:11px 22px;border-radius:999px;
+  opacity:0;pointer-events:none;transition:all .26s ease;z-index:200;box-shadow:0 12px 30px rgba(0,0,0,.22);
+  max-width:86vw;text-align:center;
+}
+.yxtp-toast.is-on{opacity:1;transform:translate(-50%,0);}
+.yxtp-modal{
+  position:fixed;inset:0;z-index:180;display:none;place-items:center;padding:20px;
+  background:rgba(18,20,28,.62);
+}
+.yxtp-modal.is-on{display:grid;}
+.yxtp-modal__box{
+  background:#fff;border-radius:18px;max-width:460px;width:100%;padding:26px;
+  box-shadow:0 24px 60px rgba(0,0,0,.3);max-height:86vh;overflow:auto;
+}
+.yxtp-modal__box h3{font-size:19px;margin-bottom:8px;}
+.yxtp-modal__box p{font-size:13.5px;color:var(--yxtp-ink-soft);}
+.yxtp-modal__box textarea,.yxtp-modal__box input{
+  width:100%;border:1px solid var(--yxtp-line);border-radius:10px;padding:10px 12px;
+  font-family:inherit;font-size:13.5px;margin-top:12px;outline:none;resize:vertical;
+}
+.yxtp-modal__box textarea:focus,.yxtp-modal__box input:focus{border-color:var(--yxtp-accent);}
+.yxtp-modal__foot{display:flex;gap:10px;justify-content:flex-end;margin-top:16px;flex-wrap:wrap;}
+.yxtp-top{
+  position:fixed;right:20px;bottom:26px;width:44px;height:44px;border-radius:50%;
+  border:none;background:var(--yxtp-dark);color:#fff;display:grid;place-items:center;
+  opacity:0;pointer-events:none;transition:all .24s ease;z-index:90;font-size:15px;
+}
+.yxtp-top.is-on{opacity:1;pointer-events:auto;}
+.yxtp-top:hover{background:var(--yxtp-accent);}
+.yxtp-share-row{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px;}
+.yxtp-share-row button{
+  border:1px solid var(--yxtp-line);background:#fff;border-radius:999px;padding:7px 15px;font-size:13px;
+  color:var(--yxtp-ink-soft);
+}
+.yxtp-share-row button:hover{border-color:var(--yxtp-accent);color:var(--yxtp-accent-deep);}
+.yxtp-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;}
+
+@media (max-width:960px){
+  .yxtp-hero__grid,.yxtp-focus,.yxtp-topic{grid-template-columns:minmax(0,1fr);}
+  .yxtp-vgrid{grid-template-columns:repeat(2,minmax(0,1fr));}
+  .yxtp-footer__grid{grid-template-columns:minmax(0,1fr) minmax(0,1fr);}
+  .yxtp-header__inner{flex-wrap:wrap;gap:12px;}
+  .yxtp-nav{
+    display:none;order:5;width:100%;flex-direction:column;gap:2px;
+    padding:8px 0 4px;border-top:1px solid var(--yxtp-line);
+  }
+  .yxtp-nav.is-open{display:flex;}
+  .yxtp-nav a{padding:9px 2px;font-size:15px;}
+  .yxtp-burger{display:grid;}
+  .yxtp-header__tools{margin-left:auto;}
+  .yxtp-search{min-width:0;flex:1;max-width:260px;}
+}
+@media (max-width:640px){
+  .yxtp-vgrid,.yxtp-authors,.yxtp-reviews{grid-template-columns:minmax(0,1fr);}
+  .yxtp-stats{grid-template-columns:minmax(0,1fr);max-width:none;}
+  .yxtp-stat{display:flex;align-items:baseline;gap:10px;}
+  .yxtp-footer__grid{grid-template-columns:minmax(0,1fr);}
+  .yxtp-item{grid-template-columns:minmax(0,1fr);}
+  .yxtp-tools{justify-content:flex-start;}
+  .yxtp-dyn li{grid-template-columns:minmax(0,1fr);gap:3px;}
+  .yxtp-notice__list{gap:0;}
+  .yxtp-notice__list li:nth-child(n+2){display:none;}
+  .yxtp-search{max-width:none;}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="yxtp-sticky">
+  <div class="yxtp-notice" id="yxtp-notice">
+    <div class="yxtp-wrap yxtp-notice__inner">
+      <span class="yxtp-notice__tag">官方发布</span>
+      <ul class="yxtp-notice__list">
+        <li>【更新】<b>《每日吃瓜·巷口夜话》</b>第 42 期已上线，8K 高清正版首发</li>
+        <li>【报名】<b>2026 冬季影像挑战</b>开放投稿，1 月 8 日截止</li>
+        <li>【动态】印象足拍创作者扶持计划第二期名单公示</li>
+      </ul>
+    </div>
+  </div>
+  <header class="yxtp-header">
+    <div class="yxtp-wrap yxtp-header__inner">
+      <a class="yxtp-brand" href="#yxtp-hero">
+        <span class="yxtp-brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="7" width="26" height="18" rx="5" stroke="#ff4d6d" stroke-width="2.4"/><path d="M13 12.5l7 3.5-7 3.5z" fill="#ffb703"/></svg>
+        </span>
+        <span class="yxtp-brand__text">
+          <strong>印象足拍</strong>
+          <span>YINXIANG ZUPAI</span>
+        </span>
+      </a>
+      <nav class="yxtp-nav" id="yxtp-nav" aria-label="主导航">
+        <a href="#yxtp-focus">焦点内容</a>
+        <a href="#yxtp-videos">热门视频</a>
+        <a href="#yxtp-topics">专题企划</a>
+        <a href="#yxtp-authors">创作者</a>
+        <a href="#yxtp-essay">吃瓜解析</a>
+        <a href="#yxtp-reviews">社区口碑</a>
+        <a href="#yxtp-help">帮助中心</a>
+      </nav>
+      <div class="yxtp-header__tools">
+        <div class="yxtp-search">
+          <label class="yxtp-sr" for="yxtp-search-input">搜索站内内容</label>
+          <input id="yxtp-search-input" type="search" placeholder="搜索吃瓜视频 / 创作者 / 专题" autocomplete="off">
+          <button type="button" id="yxtp-search-btn" aria-label="搜索">
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="5" stroke="#fff" stroke-width="1.8"/><path d="M11 11l3.2 3.2" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg>
+          </button>
+        </div>
+        <button class="yxtp-burger" id="yxtp-burger" type="button" aria-label="展开导航" aria-expanded="false" aria-controls="yxtp-nav"><span></span></button>
+      </div>
+    </div>
+    <div class="yxtp-wrap"><div class="yxtp-search__tip" id="yxtp-search-tip" role="status" aria-live="polite"></div></div>
+  </header>
+</div>
+
+<main>
+
+  <!-- 首屏 -->
+  <section class="yxtp-hero" id="yxtp-hero">
+    <img class="yxtp-hero__bg" alt="印象足拍演播厅夜色主视觉，环形灯下主播席与多机位取景" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1600' height='900' viewBox='0 0 1600 900'%3E%3Cdefs%3E%3ClinearGradient id='g1' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%231b1e29'/%3E%3Cstop offset='55%25' stop-color='%232a2c3d'/%3E%3Cstop offset='100%25' stop-color='%23403449'/%3E%3C/linearGradient%3E%3CradialGradient id='glow' cx='.72' cy='.32' r='.5'%3E%3Cstop offset='0' stop-color='%23ff4d6d' stop-opacity='.55'/%3E%3Cstop offset='1' stop-color='%23ff4d6d' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect width='1600' height='900' fill='url(%23g1)'/%3E%3Crect width='1600' height='900' fill='url(%23glow)'/%3E%3Ccircle cx='1150' cy='300' r='210' fill='none' stroke='%23ffb703' stroke-opacity='.5' stroke-width='3'/%3E%3Ccircle cx='1150' cy='300' r='150' fill='none' stroke='%23ff4d6d' stroke-opacity='.45' stroke-width='2'/%3E%3Cpath d='M0 720 L400 560 L760 660 L1180 470 L1600 620 L1600 900 L0 900 Z' fill='%23151620' fill-opacity='.85'/%3E%3Cg stroke='%23ffb703' stroke-opacity='.35' stroke-width='2'%3E%3Cpath d='M120 260 h150 M120 300 h90 M120 340 h120'/%3E%3C/g%3E%3Cg fill='%23ff4d6d' fill-opacity='.8'%3E%3Ccircle cx='300' cy='430' r='7'/%3E%3Ccircle cx='340' cy='470' r='4'/%3E%3Ccircle cx='1320' cy='640' r='6'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.14'%3E%3Crect x='900' y='560' width='360' height='14' rx='7'/%3E%3Crect x='900' y='592' width='250' height='14' rx='7'/%3E%3C/g%3E%3C/svg%3E">
+    <div class="yxtp-hero__veil"></div>
+    <div class="yxtp-wrap yxtp-hero__grid">
+      <div>
+        <span class="yxtp-eyebrow">官方网站 · 品牌社区 · 持续运营</span>
+        <h1>印象足拍<em>每日吃瓜</em></h1>
+        <p class="yxtp-hero__lead">
+          作为深耕短视频领域的<b>原创内容平台</b>，印象足拍官方网站以「每日吃瓜」为内容主线，为创作者与企业搭建高品质内容生态：
+          每天更新一条值得细看的记录，让吃瓜不止于围观，更有<b>真实、温暖、有力量</b>的表达。
+        </p>
+        <div class="yxtp-hero__actions">
+          <a class="yxtp-btn" href="#yxtp-videos">今日吃瓜 · 立即观看</a>
+          <a class="yxtp-btn yxtp-btn--ghost" href="#yxtp-authors">认识创作者</a>
+          <button class="yxtp-btn yxtp-btn--ghost" type="button" data-yxtp-open="submit">我要投稿</button>
+        </div>
+        <div class="yxtp-hero__live"><span class="yxtp-dot"></span>每日 20:00 更新 · 官方高清正版 · 今日已有 12,860 位观众在线</div>
+        <div class="yxtp-stats">
+          <div class="yxtp-stat"><strong data-yxtp-count="3280">3,280</strong><span>原创视频累计发布</span></div>
+          <div class="yxtp-stat"><strong data-yxtp-count="186">186</strong><span>签约创作者</span></div>
+          <div class="yxtp-stat"><strong data-yxtp-count="92">92%</strong><span>社区口碑好评率</span></div>
+        </div>
+      </div>
+      <aside class="yxtp-hero__panel">
+        <h2>今日瓜田速览</h2>
+        <p>由官方运营团队每日人工筛选，只保留有细节、有出处、有后续的内容线索。</p>
+        <ul>
+          <li><span>01</span>巷口夜话第 42 期：老面馆的一天</li>
+          <li><span>02</span>菜市场早市实录·冬日特辑</li>
+          <li><span>03</span>创作者阿橘：拍完 300 条视频之后</li>
+          <li><span>04</span>社区投票：年度最想再看一期的选题</li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+  <!-- 焦点内容 -->
+  <section class="yxtp-sec" id="yxtp-focus">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Featured · 焦点推荐</span>
+          <h2>印象足拍今日焦点：一条视频，一个真实的瓜</h2>
+        </div>
+        <p>每日吃瓜不追热点噪音，我们更在意事件背后的生活切面。以下内容均由官方编辑部推荐，配套完整图文与数据说明。</p>
+      </div>
+      <div class="yxtp-focus">
+        <article class="yxtp-focus__cover">
+          <span class="yxtp-focus__badge">今日头条</span>
+          <img alt="巷口夜话第42期封面，老面馆清晨蒸汽与手擀面特写" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='800' height='500' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23fff3e2'/%3E%3Cstop offset='1' stop-color='%23f3c9a0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23a)'/%3E%3Ccircle cx='620' cy='140' r='80' fill='%23ffcf8f'/%3E%3Crect x='0' y='330' width='800' height='170' fill='%23c98c56'/%3E%3Crect x='60' y='300' width='220' height='34' rx='17' fill='%23fff8ec'/%3E%3Cpath d='M120 300 q30 -70 90 -70 q60 0 90 70' fill='none' stroke='%23ffffff' stroke-opacity='.8' stroke-width='8'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.55' stroke-width='6' fill='none'%3E%3Cpath d='M420 330 q20 -60 80 -60'/%3E%3Cpath d='M470 330 q20 -90 100 -90'/%3E%3C/g%3E%3Cg fill='%23a2643a'%3E%3Crect x='520' y='250' width='18' height='90' rx='4'/%3E%3Crect x='560' y='270' width='18' height='70' rx='4'/%3E%3Crect x='600' y='240' width='18' height='100' rx='4'/%3E%3C/g%3E%3C/svg%3E">
+          <div class="yxtp-focus__cap">
+            <h3>《巷口夜话》第 42 期：老面馆的一天，被 12 万人围观的日常</h3>
+            <p>凌晨四点的和面声、六点半的第一位熟客、午后三点半的短暂安静——我们把镜头放在巷口一整天，记录一碗面从面团到端上桌的全过程，也记录下老街坊们各自的吃瓜式闲聊。</p>
+            <div class="yxtp-meta">
+              <span>创作者：巷口老周</span><span>时长 18:42</span><span>播放 128,400</span><span>点赞 9,860</span>
+            </div>
+            <div class="yxtp-tools" style="margin-top:14px;">
+              <button class="yxtp-ico" type="button" data-yxtp-like="128400">♡ 点赞 <b>9,860</b></button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-copy>复制链接</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="share">分享</button>
+            </div>
+          </div>
+        </article>
+        <div class="yxtp-list">
+          <article class="yxtp-item">
+            <div>
+              <h3>菜市场早市实录：哪家摊主的瓜最甜</h3>
+              <p>我们跟着三位本地买手走了整条早市，从选瓜手法到报价门道，一次性讲清楚那些看似玄学的挑瓜经验。</p>
+              <div class="yxtp-tags"><span class="yxtp-tag">生活记录</span><span class="yxtp-tag">实用技巧</span><span class="yxtp-tag">城市探索</span></div>
+              <div class="yxtp-meta"><span>创作者：早市小满</span><span>播放 86,200</span><span>点赞 6,410</span></div>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="86200">♡ 6,410</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆</button>
+            </div>
+          </article>
+          <article class="yxtp-item">
+            <div>
+              <h3>拍完 300 条视频之后，我学会了不追瓜</h3>
+              <p>创作者阿橘的复盘：从追逐流量到守住选题节奏，中间踩过的坑和最终留下来的方法，全在这期访谈里。</p>
+              <div class="yxtp-tags"><span class="yxtp-tag">人物访谈</span><span class="yxtp-tag">创作幕后</span></div>
+              <div class="yxtp-meta"><span>创作者：阿橘不营业</span><span>播放 61,500</span><span>点赞 4,980</span></div>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="61500">♡ 4,980</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆</button>
+            </div>
+          </article>
+          <article class="yxtp-item">
+            <div>
+              <h3>一条视频的诞生：从选题会到成片上线</h3>
+              <p>完整拆解印象足拍编辑部的工作流，包含选题投票、脚本评审、拍摄排期与三审三校的品控流程。</p>
+              <div class="yxtp-tags"><span class="yxtp-tag">品牌故事</span><span class="yxtp-tag">行业观察</span></div>
+              <div class="yxtp-meta"><span>创作者：印象编辑部</span><span>播放 43,900</span><span>点赞 3,120</span></div>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="43900">♡ 3,120</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频三列卡片 -->
+  <section class="yxtp-sec yxtp-sec--alt" id="yxtp-videos">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Trending · 热门视频</span>
+          <h2>每日吃瓜热门榜：本周被反复刷的六条</h2>
+        </div>
+        <p>按播放、完播与互动综合加权排序，榜单每 24 小时更新一次，全部为印象足拍平台原创正版内容。</p>
+      </div>
+      <div class="yxtp-vgrid">
+        <article class="yxtp-card">
+          <div class="yxtp-card__cover">
+            <img alt="社区篮球场夜场斗牛视频封面，灯光下球员突破瞬间" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Cdefs%3E%3ClinearGradient id='b1' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23223a5c'/%3E%3Cstop offset='1' stop-color='%230f1626'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='640' height='360' fill='url(%23b1)'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%233a5a3c'/%3E%3Ccircle cx='320' cy='120' r='9' fill='%23ffb703'/%3E%3Cpath d='M0 120 h640' stroke='%23ffffff' stroke-opacity='.12' stroke-width='2'/%3E%3Cg fill='%23ff8a5b'%3E%3Ccircle cx='210' cy='200' r='22'/%3E%3Crect x='200' y='222' width='20' height='46' rx='8'/%3E%3C/g%3E%3Cg fill='%23e6e8ef'%3E%3Ccircle cx='420' cy='205' r='22'/%3E%3Crect x='410' y='227' width='20' height='42' rx='8'/%3E%3C/g%3E%3Ccircle cx='326' cy='215' r='13' fill='%23ff4d6d'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.2'%3E%3Cpath d='M80 0 v360 M560 0 v360'/%3E%3C/g%3E%3C/svg%3E">
+            <span class="yxtp-card__play" aria-hidden="true">▶</span>
+          </div>
+          <div class="yxtp-card__body">
+            <h3>夜场斗牛实录：社区球场的十点半</h3>
+            <p>没有解说、没有配乐，只有球鞋摩擦地面和观众的起哄声，一条让很多人想起自己年轻时的实录。</p>
+            <div class="yxtp-tags"><span class="yxtp-tag">健康运动</span><span class="yxtp-tag">城市探索</span></div>
+            <div class="yxtp-card__foot">
+              <span class="yxtp-byline"><span class="yxtp-avatar" style="background:#3a6ea5;">林</span>林间球场</span>
+              <span style="font-size:12px;color:#8a8d99;">播放 96,300 · 赞 7,240</span>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="96300">♡ 点赞</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="comment">评论</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-card">
+          <div class="yxtp-card__cover">
+            <img alt="深夜面馆汤锅特写视频封面，白汽与铜锅上的葱花" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23241c16'/%3E%3Ccircle cx='320' cy='300' r='150' fill='%234b3122'/%3E%3Ccircle cx='320' cy='300' r='118' fill='%23c98c56'/%3E%3Cellipse cx='320' cy='292' rx='96' ry='34' fill='%23ffdca8'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.5' stroke-width='7' fill='none' stroke-linecap='round'%3E%3Cpath d='M270 230 q-24 -60 6 -110'/%3E%3Cpath d='M340 224 q-20 -70 10 -120'/%3E%3Cpath d='M400 236 q-18 -56 8 -100'/%3E%3C/g%3E%3Cg fill='%235bbd54'%3E%3Ccircle cx='290' cy='292' r='5'/%3E%3Ccircle cx='330' cy='300' r='4'/%3E%3Ccircle cx='360' cy='288' r='5'/%3E%3C/g%3E%3C/svg%3E">
+            <span class="yxtp-card__play" aria-hidden="true">▶</span>
+          </div>
+          <div class="yxtp-card__body">
+            <h3>深夜面馆的热气：一碗汤的十分钟</h3>
+            <p>固定机位、无剪辑长镜头，从起锅到上桌的十分钟完整保留，很多观众说看完就去楼下吃了碗面。</p>
+            <div class="yxtp-tags"><span class="yxtp-tag">美食烹饪</span><span class="yxtp-tag">治愈影像</span></div>
+            <div class="yxtp-card__foot">
+              <span class="yxtp-byline"><span class="yxtp-avatar" style="background:#c98c56;">周</span>巷口老周</span>
+              <span style="font-size:12px;color:#8a8d99;">播放 88,100 · 赞 8,030</span>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="88100">♡ 点赞</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="comment">评论</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-card">
+          <div class="yxtp-card__cover">
+            <img alt="老式编辑台与胶片素材视频封面，桌面散放分镜手稿" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23ece6da'/%3E%3Crect x='40' y='60' width='230' height='150' rx='8' fill='%23ffffff' stroke='%23c9c0ad' stroke-width='3'/%3E%3Cg stroke='%23b8ae99' stroke-width='3'%3E%3Cpath d='M64 96h180 M64 122h140 M64 148h170 M64 172h110'/%3E%3C/g%3E%3Crect x='310' y='50' width='290' height='190' rx='10' fill='%2350483c'/%3E%3Crect x='330' y='70' width='250' height='150' rx='6' fill='%23d9d2c2'/%3E%3Cg fill='%23ff4d6d'%3E%3Crect x='346' y='88' width='90' height='10' rx='5'/%3E%3Crect x='346' y='112' width='150' height='10' rx='5'/%3E%3C/g%3E%3Cg fill='%233c7d5a'%3E%3Crect x='346' y='136' width='120' height='10' rx='5'/%3E%3Crect x='346' y='160' width='180' height='10' rx='5'/%3E%3C/g%3E%3Crect x='60' y='250' width='200' height='22' rx='11' fill='%23ffb703'/%3E%3Crect x='280' y='262' width='150' height='18' rx='9' fill='%23c9c0ad'/%3E%3C/svg%3E">
+            <span class="yxtp-card__play" aria-hidden="true">▶</span>
+          </div>
+          <div class="yxtp-card__body">
+            <h3>剪辑台前的三小时：一版片子怎么改到五版</h3>
+            <p>把剪辑过程完整录下来，包括三次推翻重来和一次甲方反馈，给所有想入行的人一个真实参考。</p>
+            <div class="yxtp-tags"><span class="yxtp-tag">教程干货</span><span class="yxtp-tag">创作幕后</span></div>
+            <div class="yxtp-card__foot">
+              <span class="yxtp-byline"><span class="yxtp-avatar" style="background:#6b5b45;">剪</span>剪辑师老K</span>
+              <span style="font-size:12px;color:#8a8d99;">播放 74,600 · 赞 6,180</span>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="74600">♡ 点赞</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="comment">评论</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-card">
+          <div class="yxtp-card__cover">
+            <img alt="旧城区街巷雨后视频封面，水洼倒影与晾衣绳" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%238ea6b8'/%3E%3Crect x='0' y='210' width='640' height='150' fill='%2351697a'/%3E%3Cg fill='%23dbe4ea'%3E%3Crect x='40' y='60' width='120' height='150'/%3E%3Crect x='190' y='30' width='150' height='180'/%3E%3Crect x='370' y='70' width='110' height='140'/%3E%3Crect x='510' y='40' width='100' height='170'/%3E%3C/g%3E%3Cg fill='%23768491'%3E%3Crect x='66' y='90' width='26' height='30'/%3E%3Crect x='110' y='90' width='26' height='30'/%3E%3Crect x='216' y='64' width='30' height='34'/%3E%3Crect x='268' y='64' width='30' height='34'/%3E%3C/g%3E%3Cpath d='M0 210 q160 26 320 0 q160 -26 320 0 v150 H0 Z' fill='%233d4e5c' fill-opacity='.55'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.5' stroke-width='3'%3E%3Cpath d='M60 40 q90 40 180 0'/%3E%3Cpath d='M300 34 q120 46 240 0'/%3E%3C/g%3E%3C/svg%3E">
+            <span class="yxtp-card__play" aria-hidden="true">▶</span>
+          </div>
+          <div class="yxtp-card__body">
+            <h3>雨后旧城：我走了三公里，只为拍一条巷子</h3>
+            <p>雨停后的十五分钟是旧城最好看的时候，这条视频几乎没做调色，保留了水洼反光和真实的灰蓝色。</p>
+            <div class="yxtp-tags"><span class="yxtp-tag">艺术美学</span><span class="yxtp-tag">在地文化</span></div>
+            <div class="yxtp-card__foot">
+              <span class="yxtp-byline"><span class="yxtp-avatar" style="background:#5d7f9b;">雨</span>雨天取景器</span>
+              <span style="font-size:12px;color:#8a8d99;">播放 69,200 · 赞 5,760</span>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="69200">♡ 点赞</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="comment">评论</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-card">
+          <div class="yxtp-card__cover">
+            <img alt="手作陶艺拉坯过程视频封面，转盘上的泥坯与双手" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23d9cdb8'/%3E%3Ccircle cx='320' cy='230' r='120' fill='%23b9a88f'/%3E%3Ccircle cx='320' cy='210' r='76' fill='%23a8785a'/%3E%3Cellipse cx='320' cy='196' rx='52' ry='18' fill='%23c7977a'/%3E%3Cellipse cx='320' cy='176' rx='34' ry='12' fill='%23e0b99d'/%3E%3Cg fill='%23c9a58b'%3E%3Crect x='228' y='150' width='40' height='120' rx='18' transform='rotate(18 248 210)'/%3E%3Crect x='372' y='150' width='40' height='120' rx='18' transform='rotate(-18 392 210)'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-opacity='.4' stroke-width='3'%3E%3Cpath d='M60 320 h520'/%3E%3C/g%3E%3Ccircle cx='112' cy='90' r='30' fill='%23ffb703' fill-opacity='.55'/%3E%3C/svg%3E">
+            <span class="yxtp-card__play" aria-hidden="true">▶</span>
+          </div>
+          <div class="yxtp-card__body">
+            <h3>拉坯第一课：手抖的人也能做出碗</h3>
+            <p>把失败的前五个坯子全部保留在片子里，讲师说这才是手作的真实过程，观众评论区一片共鸣。</p>
+            <div class="yxtp-tags"><span class="yxtp-tag">手作DIY</span><span class="yxtp-tag">兴趣同好</span></div>
+            <div class="yxtp-card__foot">
+              <span class="yxtp-byline"><span class="yxtp-avatar" style="background:#a8785a;">陶</span>陶土工作室</span>
+              <span style="font-size:12px;color:#8a8d99;">播放 58,400 · 赞 4,920</span>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="58400">♡ 点赞</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="comment">评论</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-card">
+          <div class="yxtp-card__cover">
+            <img alt="宠物猫在窗台晒太阳视频封面，猫爪与窗棂光影" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='360' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f4e6d4'/%3E%3Crect x='0' y='250' width='640' height='110' fill='%23c9a37c'/%3E%3Cg stroke='%23ffffff' stroke-opacity='.7' stroke-width='10'%3E%3Cpath d='M120 0 v360 M260 0 v360 M400 0 v360'/%3E%3C/g%3E%3Cellipse cx='330' cy='238' rx='96' ry='52' fill='%23f0a860'/%3E%3Ccircle cx='262' cy='206' r='38' fill='%23f0a860'/%3E%3Cpath d='M238 178 l-8 -34 l30 16 Z' fill='%23f0a860'/%3E%3Cpath d='M286 176 l10 -32 l24 22 Z' fill='%23f0a860'/%3E%3Ccircle cx='252' cy='202' r='5' fill='%23241c16'/%3E%3Ccircle cx='276' cy='202' r='5' fill='%23241c16'/%3E%3Cpath d='M410 232 q46 -14 70 18' stroke='%23f0a860' stroke-width='14' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+            <span class="yxtp-card__play" aria-hidden="true">▶</span>
+          </div>
+          <div class="yxtp-card__body">
+            <h3>窗台十四点：一只猫如何度过整个下午</h3>
+            <p>同机位拍了整整七天，剪成三分钟，记录了猫在不同时间选择不同窗格晒太阳的规律。</p>
+            <div class="yxtp-tags"><span class="yxtp-tag">萌宠日常</span><span class="yxtp-tag">日常记录</span></div>
+            <div class="yxtp-card__foot">
+              <span class="yxtp-byline"><span class="yxtp-avatar" style="background:#e59a52;">猫</span>猫在北窗</span>
+              <span style="font-size:12px;color:#8a8d99;">播放 52,700 · 赞 4,610</span>
+            </div>
+            <div class="yxtp-tools">
+              <button class="yxtp-ico" type="button" data-yxtp-like="52700">♡ 点赞</button>
+              <button class="yxtp-ico" type="button" data-yxtp-fav>☆ 收藏</button>
+              <button class="yxtp-ico" type="button" data-yxtp-open="comment">评论</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="yxtp-sec" id="yxtp-topics">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Series · 专题企划</span>
+          <h2>印象足拍专题企划：把吃瓜做成可持续的内容生态</h2>
+        </div>
+        <p>每个专题由官方企划组发起，邀请平台创作者共创，保持统一叙事标准与品控要求，持续更新中。</p>
+      </div>
+      <div class="yxtp-topic">
+        <div class="yxtp-topic__main">
+          <h3>《巷口夜话》：一间店，一天，一条完整的记录</h3>
+          <p>我们选择城市里最不起眼的门面，用一整天的时间跟拍，不加旁白、不做引导，只保留真实的对话与声音。专题已上线 42 期，覆盖面馆、修表铺、旧书摊、社区理发店等 17 个行业。</p>
+          <p>这个专题也是「每日吃瓜」内容方法论的原点：先有具体的人和具体的细节，讨论才有落点。很多观众留言说，看完之后会特意绕路去看看自家楼下那间店。</p>
+          <span class="yxtp-status">● 连载中 · 每周五更新</span>
+          <ul class="yxtp-topic__list" style="margin-top:20px;">
+            <li><b>第 42 期 · 老面馆的一天</b><span>18:42 · 播放 128,400</span></li>
+            <li><b>第 41 期 · 修表铺的放大镜</b><span>15:20 · 播放 96,800</span></li>
+            <li><b>第 40 期 · 旧书摊的黄昏</b><span>21:06 · 播放 87,300</span></li>
+          </ul>
+        </div>
+        <div>
+          <img alt="巷口夜话专题海报，夜色中的小店面与暖黄灯光" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='640' height='420' viewBox='0 0 640 420'%3E%3Crect width='640' height='420' fill='%231a1d28'/%3E%3Crect x='90' y='140' width='460' height='240' fill='%23302d3d'/%3E%3Crect x='130' y='190' width='170' height='150' fill='%23ffd08a' fill-opacity='.85'/%3E%3Crect x='340' y='190' width='170' height='150' fill='%23ffb703' fill-opacity='.5'/%3E%3Crect x='90' y='120' width='460' height='30' fill='%23ff4d6d'/%3E%3Cg fill='%23ffb703'%3E%3Ccircle cx='215' cy='265' r='26'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-opacity='.25' stroke-width='3'%3E%3Cpath d='M0 380 h640'/%3E%3C/g%3E%3Cg fill='%23ffffff' fill-opacity='.12'%3E%3Ccircle cx='500' cy='80' r='4'/%3E%3Ccircle cx='560' cy='110' r='3'/%3E%3Ccircle cx='430' cy='60' r='3'/%3E%3C/g%3E%3C/svg%3E">
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:20px;">
+        <div class="yxtp-card" style="padding:20px;">
+          <h3 style="font-size:17px;">《一手证据》</h3>
+          <p style="font-size:13.5px;color:var(--yxtp-ink-soft);margin-top:8px;">教观众如何判断一条瓜是否值得相信：信源、时间线、交叉验证三步法，每期一个案例复盘。</p>
+          <span class="yxtp-status" style="margin-top:12px;">● 更新至 12 期</span>
+        </div>
+        <div class="yxtp-card" style="padding:20px;">
+          <h3 style="font-size:17px;">《回到现场》</h3>
+          <p style="font-size:13.5px;color:var(--yxtp-ink-soft);margin-top:8px;">热点过去三十天后，我们再去一次现场，看看当事店、当事街道和当事人们后来怎么样了。</p>
+          <span class="yxtp-status" style="margin-top:12px;">● 更新至 9 期</span>
+        </div>
+        <div class="yxtp-card" style="padding:20px;">
+          <h3 style="font-size:17px;">《创作者的十小时》</h3>
+          <p style="font-size:13.5px;color:var(--yxtp-ink-soft);margin-top:8px;">完整记录一位创作者的一天，从选题、拍摄到发布与复盘，呈现内容生产的真实成本。</p>
+          <span class="yxtp-status" style="margin-top:12px;">● 更新至 6 期</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="yxtp-sec yxtp-sec--alt" id="yxtp-authors">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Creators · 创作者矩阵</span>
+          <h2>印象足拍签约创作者：四种视角，同一份真实</h2>
+        </div>
+        <p>平台持续运营创作者扶持计划，提供选题指导、拍摄场地与分发支持，让垂直领域的表达被更多人看到。</p>
+      </div>
+      <div class="yxtp-authors">
+        <article class="yxtp-author">
+          <div class="yxtp-author__ava" style="background:#c98c56;">周</div>
+          <div>
+            <h3>巷口老周</h3>
+            <div class="yxtp-author__field">城市记录 · 美食影像</div>
+            <p>在旧城区长大，做过六年厨师，习惯用固定机位拍完整的流程。相信一碗面的热气比任何文案都有说服力，作品以长镜头和现场声为主。</p>
+            <div class="yxtp-author__nums"><span>作品 <b>146</b></span><span>粉丝 <b>21.4 万</b></span><span>擅长 <b>实景记录</b></span></div>
+            <div class="yxtp-tools" style="margin-top:12px;">
+              <button class="yxtp-ico" type="button" data-yxtp-author="巷口老周在平台发布 146 条原创视频，主打城市记录与美食影像，代表作《巷口夜话》系列。">作者资料</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-author">
+          <div class="yxtp-author__ava" style="background:#ff4d6d;">橘</div>
+          <div>
+            <h3>阿橘不营业</h3>
+            <div class="yxtp-author__field">人物访谈 · 创作复盘</div>
+            <p>前媒体编辑，现做独立访谈。擅长把长对话剪出节奏，也会把自己拍崩的素材放出来讲经验，是平台上最受欢迎的「现实主义」创作者之一。</p>
+            <div class="yxtp-author__nums"><span>作品 <b>98</b></span><span>粉丝 <b>17.8 万</b></span><span>擅长 <b>深度访谈</b></span></div>
+            <div class="yxtp-tools" style="margin-top:12px;">
+              <button class="yxtp-ico" type="button" data-yxtp-author="阿橘不营业，前媒体编辑，平台访谈类创作者，累计 98 条作品，关注内容生产的真实成本。">作者资料</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-author">
+          <div class="yxtp-author__ava" style="background:#5d7f9b;">雨</div>
+          <div>
+            <h3>雨天取景器</h3>
+            <div class="yxtp-author__field">城市探索 · 艺术美学</div>
+            <p>自由摄影师，偏爱阴天与雨后。拍过 40 多条城市街巷短片，坚持不修图式调色，作品常被用作城市影像课程的案例素材。</p>
+            <div class="yxtp-author__nums"><span>作品 <b>83</b></span><span>粉丝 <b>12.6 万</b></span><span>擅长 <b>影像美学</b></span></div>
+            <div class="yxtp-tools" style="margin-top:12px;">
+              <button class="yxtp-ico" type="button" data-yxtp-author="雨天取景器，自由摄影师，专注城市街巷短片，作品强调真实光色与克制表达。">作者资料</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-author">
+          <div class="yxtp-author__ava" style="background:#6b5b45;">K</div>
+          <div>
+            <h3>剪辑师老K</h3>
+            <div class="yxtp-author__field">教程干货 · 行业观察</div>
+            <p>十年后期从业者，做过广告也剪过纪录片。现在专门讲「不好看但有用」的内容，从工程设置到交付规范，把行业经验整理成可复用的流程。</p>
+            <div class="yxtp-author__nums"><span>作品 <b>112</b></span><span>粉丝 <b>15.2 万</b></span><span>擅长 <b>制作教学</b></span></div>
+            <div class="yxtp-tools" style="margin-top:12px;">
+              <button class="yxtp-ico" type="button" data-yxtp-author="剪辑师老K，十年后期经验，平台教程类创作者，主讲剪辑流程与交付规范，累计 112 条作品。">作者资料</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-author">
+          <div class="yxtp-author__ava" style="background:#3a6ea5;">林</div>
+          <div>
+            <h3>林间球场</h3>
+            <div class="yxtp-author__field">健康运动 · 社区纪实</div>
+            <p>业余球员兼社区球场管理员，拍了三年夜场斗牛。没有华丽运镜，靠的是对场上每个人的熟悉，很多观众因为他的视频重新开始运动。</p>
+            <div class="yxtp-author__nums"><span>作品 <b>74</b></span><span>粉丝 <b>9.3 万</b></span><span>擅长 <b>运动纪实</b></span></div>
+            <div class="yxtp-tools" style="margin-top:12px;">
+              <button class="yxtp-ico" type="button" data-yxtp-author="林间球场，社区球场管理员，专注夜场斗牛纪实，作品以现场声与真实对抗见长。">作者资料</button>
+            </div>
+          </div>
+        </article>
+        <article class="yxtp-author">
+          <div class="yxtp-author__ava" style="background:#3c7d5a;">陶</div>
+          <div>
+            <h3>陶土工作室</h3>
+            <div class="yxtp-author__field">手作DIY · 兴趣同好</div>
+            <p>三人小团队，主要拍陶艺与木作的教学过程，坚持保留失败镜头。他们相信过程比成品更能吸引同好，也更能说明手作的真实难度。</p>
+            <div class="yxtp-author__nums"><span>作品 <b>65</b></span><span>粉丝 <b>8.1 万</b></span><span>擅长 <b>手作教学</b></span></div>
+            <div class="yxtp-tools" style="margin-top:12px;">
+              <button class="yxtp-ico" type="button" data-yxtp-author="陶土工作室，专注陶艺与木作教学视频，强调手作过程真实性，累计 65 条原创作品。">作者资料</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析长文 -->
+  <section class="yxtp-sec" id="yxtp-essay">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Insight · 深度解析</span>
+          <h2>为什么「印象足拍 · 每日吃瓜」值得长期看下去</h2>
+        </div>
+        <p>从内容方法论到社区运营，一篇完整的品牌解析，帮助你理解这个平台在做什么、为什么这样做。</p>
+      </div>
+      <div class="yxtp-essay">
+        <p class="yxtp-essay__lead">很多第一次打开印象足拍的人会问：一个叫「每日吃瓜」的频道，和那些热闹的快消内容有什么区别？答案藏在我们的选题表里。作为一家持续运营的视频品牌官方网站，我们不靠情绪推动播放量，而是把每一条内容当作一次小型调查：先找到具体的人，再确认具体的事，最后才决定要不要拍、怎么拍。这条路径决定了印象足拍的内容密度更高、留存更久，也决定了它为什么能在同类平台中保持口碑。</p>
+
+        <h3>一、选题标准：从「热闹」到「有据」</h3>
+        <p>「每日吃瓜」听起来轻松，执行起来却需要极强的克制。我们内部有一套明确的三层筛选机制：<b>第一层是信源核验</b>，任何选题必须有两个以上相互独立的信源，否则只进入观察池不进入拍摄清单；<b>第二层是现场可达性</b>，如果创作者无法到达现场，宁可放弃这个选题，也不做二手转述；<b>第三层是长期价值</b>，我们会在选题会上问一个问题：这条内容三个月后还有人愿意点开吗？三个问题都通过，选题才会进入排期。这套机制让印象足拍的更新节奏看起来不如热点账号快，但每一条的完播率与收藏率都明显更高，这也是企业级内容品控与自媒体式生产最本质的差别。</p>
+        <p>以《巷口夜话》为例，第 42 期老面馆选题从线索到上线用了十九天。前七天创作者只是去吃面，和老板聊天，不架机器；确认对方愿意被拍之后，才安排一次完整的跟拍。这种慢并不浪费，反而让被拍者在镜头前保持了自然状态，也让视频里那些关于房租、孩子、熟客的对话具备了真实感。很多观众反馈说，这类内容不像短视频，更像一段被保存下来的生活。</p>
+
+        <h3>二、生产流程：三审三校与创作者共创</h3>
+        <p>印象足拍的每一条原创视频都要经过三审三校。初审由责任编辑判断事实与叙事结构，复审由内容负责人检查价值观与表达边界，终审由品牌团队确认是否符合平台调性；三校则分别校对字幕、时间码与版权信息。这套流程听起来像传统媒体，但我们把它做成了轻量化的线上协作，创作者在提交粗剪时就能看到具体的修改意见，而不是等成片被退回。我们始终认为，<b>专业不是流程繁重，而是流程透明</b>。</p>
+        <p>共创是另一条主线。平台每年开放两期创作者扶持计划，入选者可以获得拍摄补贴、设备借用、选题指导与分发资源。扶持不是签独家，而是帮助创作者在自己擅长的垂直领域做深。比如林间球场本来只拍自己的球队，加入计划后我们把他的视角扩展到整个社区球场的夜间生态，作品数量翻了一倍，粉丝也从两万涨到九万。类似的故事在平台上还有很多，这也是「每日吃瓜」能够持续运营的底层原因——它不是一个账号，而是一个有造血能力的内容生态。</p>
+
+        <h3>三、社区氛围：真实、温暖、有边界</h3>
+        <p>评论区是印象足拍最看重的地方。我们不做无门槛的开放讨论，而是设置了明确的社区公约：不人身攻击、不传播未经核实的指控、不消费他人困境。运营团队每天会人工巡查高互动内容，对违规评论做折叠处理，并在必要时由创作者出面说明。有观众说这里「吃瓜吃得比较安静」，我们把这当作褒奖。真实不等于尖锐，围观也不等于审判，这是平台从第一天起就坚持的边界。</p>
+        <p>与此同时，社区也在反向滋养内容。每周的选题投票、每月的观众来信、每季度的线下放映会，都是我们获取反馈的渠道。有一位观众在来信里写：看完修表铺那期之后，他把爷爷留下的旧表拿去修好了。这条反馈后来被我们做成了《回到现场》的一期片尾。类似的小事构成了印象足拍的品牌底色——<b>它关心的是人和人之间的连接，而不是数据曲线</b>。</p>
+
+        <h3>四、平台价值：让好内容被稳定地看见</h3>
+        <p>对创作者来说，印象足拍提供的是稳定的曝光与可预期的收益结构：播放分成、专题合作、品牌定制三条路径并行，规则公开透明，结算周期固定。对企业客户来说，我们提供的是内容共创而非简单投放，从选题到成片全程参与，确保品牌信息与内容叙事自然融合。对普通观众来说，这里是一个可以放心点开的视频社区：没有标题党，没有恶意剪辑，没有来路不明的「独家爆料」。这三个角色共同构成了平台的信任基础，也是我们敢于把「官方网站」四个字放在首屏的原因。</p>
+        <p>未来一年，印象足拍会继续扩充「每日吃瓜」的内容半径：增加更多城市的在地记录，开放更多垂直领域的创作者席位，并把《一手证据》做成公开的内容素养课程。我们相信，一个视频品牌真正的护城河不是算法，而是长期积累的信任与口碑。这条路不快，但值得一直走下去。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 口碑评价双列 -->
+  <section class="yxtp-sec yxtp-sec--alt" id="yxtp-reviews">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Voices · 社区口碑</span>
+          <h2>观众怎么说：来自真实用户的六条长评</h2>
+        </div>
+        <p>以下评价来自印象足拍社区的真实反馈，涵盖内容质量、观看体验、创作者互动与平台服务四个维度。</p>
+      </div>
+      <div class="yxtp-reviews">
+        <article class="yxtp-review">
+          <div class="yxtp-review__top"><span class="yxtp-avatar" style="background:#c98c56;">苏</span><strong>苏打水不加冰</strong><span>11 月 19 日</span></div>
+          <div class="yxtp-stars">★★★★★</div>
+          <p>连看了三期巷口夜话，最大的感受是「没有被消费」。老板说话的节奏、手上的动作都很自然，看得出拍摄者花了时间相处。现在这样的内容不多了，希望一直做下去。</p>
+        </article>
+        <article class="yxtp-review">
+          <div class="yxtp-review__top"><span class="yxtp-avatar" style="background:#3a6ea5;">老</span><strong>老李的第二个号</strong><span>11 月 17 日</span></div>
+          <div class="yxtp-stars">★★★★☆</div>
+          <p>作为同行说句实话，剪辑台那期给出的流程表很实用，尤其是交付规范那部分。扣一星是因为希望能出配套的工程文件下载，新手会更好上手。</p>
+        </article>
+        <article class="yxtp-review">
+          <div class="yxtp-review__top"><span class="yxtp-avatar" style="background:#5d7f9b;">雨</span><strong>看雨的下午</strong><span>11 月 15 日</span></div>
+          <div class="yxtp-stars">★★★★★</div>
+          <p>雨天取景器那条旧城视频我看了四遍，水洼里倒影的处理很克制。作为本地人，能在这类平台上看到自己生活的街区被认真记录，挺感动的，已经转发给家里人。</p>
+        </article>
+        <article class="yxtp-review">
+          <div class="yxtp-review__top"><span class="yxtp-avatar" style="background:#3c7d5a;">橙</span><strong>橙子味的周末</strong><span>11 月 12 日</span></div>
+          <div class="yxtp-stars">★★★★☆</div>
+          <p>陶艺那期把失败镜头留着，非常加分。我跟着做了一个碗，虽然歪了但很有成就感。建议以后每期加一个材料清单，方便新手直接照做。</p>
+        </article>
+        <article class="yxtp-review">
+          <div class="yxtp-review__top"><span class="yxtp-avatar" style="background:#ff4d6d;">阿</span><strong>阿橘的观众小陈</strong><span>11 月 10 日</span></div>
+          <div class="yxtp-stars">★★★★★</div>
+          <p>访谈那期很长，但我一口气看完了。创作者讲自己删掉多少素材的时候特别真实，比那些只讲成功经验的内容有用得多。评论区也很友好，没人抬杠。</p>
+        </article>
+        <article class="yxtp-review">
+          <div class="yxtp-review__top"><span class="yxtp-avatar" style="background:#6b5b45;">三</span><strong>三点半放学</strong><span>11 月 8 日</span></div>
+          <div class="yxtp-stars">★★★★☆</div>
+          <p>整体观感很舒服，高清播放也不卡。唯一想提的是专题页面能不能加个追更提醒，我老是错过《一手证据》的更新，每次都得自己翻。</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 动态 + 合作 -->
+  <section class="yxtp-sec" id="yxtp-dynamics">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Newsroom · 企业动态</span>
+          <h2>印象足拍官方发布：近期企业动态与伙伴计划</h2>
+        </div>
+        <p>品牌资讯、平台规则更新与合作进展，以官方发布为准，更新时间与版本记录公开可查。</p>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:clamp(22px,3vw,40px);" class="yxtp-dyn-grid">
+        <ul class="yxtp-dyn">
+          <li>
+            <time>2026-11-20</time>
+            <div><b>创作者扶持计划第二期名单公示</b><span>共 24 位创作者入选，覆盖城市记录、手作、运动纪实等 9 个垂直领域，扶持周期为 6 个月，含拍摄补贴与选题指导。</span></div>
+          </li>
+          <li>
+            <time>2026-11-16</time>
+            <div><b>《巷口夜话》第 42 期上线</b><span>本期首次采用双机位同步录音，完整保留现场对话，播放一周内突破 12 万，收藏率位列本周第一。</span></div>
+          </li>
+          <li>
+            <time>2026-11-09</time>
+            <div><b>2026 冬季影像挑战开放投稿</b><span>主题为「我楼下的那间店」，投稿截止 1 月 8 日，入选作品将在官方网站首页专题展出并获得创作基金。</span></div>
+          </li>
+          <li>
+            <time>2026-11-02</time>
+            <div><b>社区公约 2.0 版本生效</b><span>新增对未核实指控的处理细则与申诉通道，所有高互动内容将接受人工巡查，违规评论统一折叠处理。</span></div>
+          </li>
+          <li>
+            <time>2026-10-28</time>
+            <div><b>高清风控与播放体验升级</b><span>全站视频统一支持 1080P 以上清晰度播放，弱网环境自动降级，移动端首帧加载时间平均缩短 38%。</span></div>
+          </li>
+        </ul>
+        <div>
+          <h3 style="font-size:15px;letter-spacing:.12em;color:var(--yxtp-ink-soft);margin-bottom:14px;">合作品牌 · 内容伙伴</h3>
+          <div class="yxtp-partners" style="grid-template-columns:repeat(auto-fit,minmax(110px,1fr));">
+            <div class="yxtp-partner">城市影像节<small>内容共创伙伴</small></div>
+            <div class="yxtp-partner">旧城书店联盟<small>线下放映伙伴</small></div>
+            <div class="yxtp-partner">微光器材<small>设备支持</small></div>
+            <div class="yxtp-partner">慢行咖啡<small>场地合作</small></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ + 投稿联系 -->
+  <section class="yxtp-sec yxtp-sec--alt" id="yxtp-help">
+    <div class="yxtp-wrap">
+      <div class="yxtp-sec-head">
+        <div>
+          <span class="yxtp-eyebrow">Support · 帮助与投稿</span>
+          <h2>帮助中心：关于印象足拍官网的常见问题</h2>
+        </div>
+        <p>内容合作、投稿规则、账号与版权相关问题的统一答复，更多细则可在页脚入口查看。</p>
+      </div>
+      <div style="display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,.6fr);gap:clamp(22px,3vw,40px);" class="yxtp-dyn-grid">
+        <div class="yxtp-faq">
+          <details>
+            <summary>「每日吃瓜」的选题是谁决定的？</summary>
+            <p>由官方编辑部与入驻创作者共同参与。编辑部每周召开选题会，结合社区投票、观众来信与信源核验结果确定清单，再由对应领域的创作者认领拍摄。未经核实的线索不会进入拍摄阶段。</p>
+          </details>
+          <details>
+            <summary>如何向印象足拍投稿？</summary>
+            <p>点击页面中的「我要投稿」按钮，填写作品链接与简要说明即可。初审在 3 个工作日内完成，通过后会由编辑对接后续修改。投稿作品需为本人原创，或已取得完整授权。</p>
+          </details>
+          <details>
+            <summary>平台视频支持哪些清晰度？</summary>
+            <p>全站视频统一提供高清播放，主体内容支持 1080P 及以上清晰度，弱网环境会自动降级以保证播放流畅。所有上线内容均为正版授权。</p>
+          </details>
+          <details>
+            <summary>创作者扶持计划怎么报名？</summary>
+            <p>扶持计划每年开放两期，报名入口在官方网站公告栏发布。评审主要看内容方向的一致性、更新稳定性与拍摄完成度，不单纯看粉丝量。</p>
+          </details>
+          <details>
+            <summary>评论区被折叠是什么原因？</summary>
+            <p>可能涉及人身攻击、未核实指控或泄露他人隐私。被折叠的评论可申请复核，复核结果会通过站内通知告知。社区公约 2.0 版本对处理细则有完整说明。</p>
+          </details>
+          <details>
+            <summary>可以申请线下放映或合作拍摄吗？</summary>
+            <p>可以。我们与城市影像节、旧城书店联盟保持长期合作，支持社区线下放映与联合拍摄。请通过页脚的联系方式提交需求说明，注明时间、场地与内容方向。</p>
+          </details>
+        </div>
+        <div class="yxtp-card" style="padding:24px;">
+          <h3 style="font-size:18px;">联系与投稿</h3>
+          <p style="font-size:13.5px;color:var(--yxtp-ink-soft);margin-top:10px;">内容合作、品牌共创、线下放映与媒体采访，请通过以下方式联系印象足拍官方团队。</p>
+          <ul style="display:grid;gap:10px;font-size:13.5px;margin-top:16px;">
+            <li><b>内容合作：</b>press@yxtp-brand.example</li>
+            <li><b>创作者服务：</b>creator@yxtp-brand.example</li>
+            <li><b>工作时间：</b>周一至周五 10:00–19:00</li>
+            <li><b>办公地址：</b>城市文化创意园 3 号楼 5 层</li>
+          </ul>
+          <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:18px;">
+            <button class="yxtp-btn" type="button" data-yxtp-open="submit">我要投稿</button>
+            <button class="yxtp-btn yxtp-btn--ghost" type="button" data-yxtp-open="report">反馈建议</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="yxtp-footer">
+  <div class="yxtp-wrap">
+    <div class="yxtp-footer__grid">
+      <div>
+        <div class="yxtp-footer__brand">
+          <span class="yxtp-brand__mark" aria-hidden="true">
+            <svg viewBox="0 0 32 32" fill="none"><rect x="3" y="7" width="26" height="18" rx="5" stroke="#ff4d6d" stroke-width="2.4"/><path d="M13 12.5l7 3.5-7 3.5z" fill="#ffb703"/></svg>
+          </span>
+          <strong>印象足拍</strong>
+        </div>
+        <p>印象足拍官方网站，专注「每日吃瓜」的原创视频品牌。我们以真实为底色，持续运营高品质内容生态，为创作者与企业提供值得信赖的表达空间。</p>
+        <p style="margin-top:12px;color:#8f929c;">官方网站 · 版权所有 · 持续运营中</p>
+      </div>
+      <div>
+        <h3>内容导航</h3>
+        <ul>
+          <li><a href="#yxtp-focus">焦点推荐</a></li>
+          <li><a href="#yxtp-videos">热门视频</a></li>
+          <li><a href="#yxtp-topics">专题企划</a></li>
+          <li><a href="#yxtp-authors">创作者矩阵</a></li>
+          <li><a href="#yxtp-essay">品牌解析</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>平台服务</h3>
+        <ul>
+          <li><a href="#yxtp-help">帮助中心</a></li>
+          <li><a href="#yxtp-dynamics">企业动态</a></li>
+          <li><a href="#yxtp-help">投稿入口</a></li>
+          <li><a href="#yxtp-reviews">社区口碑</a></li>
+          <li><a href="#yxtp-notice">更新日志</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="yxtp-footer__bottom">
+      <span>© 2026 印象足拍（Yinxiang Zupai）官方网站 · 保留所有权利</span>
+      <span>备案号：文网文〔2026〕第 0417 号 · 广播电视节目制作经营许可证（示例）</span>
+    </div>
+  </div>
+</footer>
+
+<div class="yxtp-toast" id="yxtp-toast" role="status" aria-live="polite"></div>
+
+<div class="yxtp-modal" id="yxtp-modal" role="dialog" aria-modal="true" aria-labelledby="yxtp-modal-title">
+  <div class="yxtp-modal__box">
+    <h3 id="yxtp-modal-title">提示</h3>
+    <div id="yxtp-modal-body"></div>
+    <div class="yxtp-modal__foot" id="yxtp-modal-foot"></div>
+  </div>
+</div>
+
+<button class="yxtp-top" id="yxtp-top" type="button" aria-label="回到顶部">↑</button>
+
+<script>
+(function(){
+  "use strict";
+
+  var toastEl = document.getElementById("yxtp-toast");
+  var toastTimer = null;
+  function toast(msg){
+    toastEl.textContent = msg;
+    toastEl.classList.add("is-on");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){ toastEl.classList.remove("is-on"); }, 2200);
+  }
+
+  /* 移动端导航折叠 */
+  var burger = document.getElementById("yxtp-burger");
+  var nav = document.getElementById("yxtp-nav");
+  burger.addEventListener("click", function(){
+    var open = nav.classList.toggle("is-open");
+    burger.setAttribute("aria-expanded", open ? "true" : "false");
+    burger.setAttribute("aria-label", open ? "收起导航" : "展开导航");
+  });
+  nav.addEventListener("click", function(e){
+    if(e.target.tagName === "A" && window.innerWidth <= 960){
+      nav.classList.remove("is-open");
+      burger.setAttribute("aria-expanded","false");
+    }
+  });
+
+  /* 搜索前端提示 */
+  var input = document.getElementById("yxtp-search-input");
+  var searchBtn = document.getElementById("yxtp-search-btn");
+  var tip = document.getElementById("yxtp-search-tip");
+  var pool = ["巷口夜话 老面馆","夜场斗牛 社区球场","陶艺拉坯 第一课","雨后旧城 街巷","猫在北窗 日常","一手证据 信源核验","剪辑流程 交付规范","老周 面馆","阿橘 访谈","雨天取景器 城市","林间球场 斗牛","专题 回到现场"];
+  function doSearch(){
+    var q = input.value.trim();
+    if(!q){
+      tip.textContent = "试试搜索：巷口夜话 / 斗牛 / 陶艺 / 旧城 / 猫";
+      tip.classList.add("is-on");
+      return;
+    }
+    var hit = pool.filter(function(s){ return s.indexOf(q) > -1; });
+    if(hit.length){
+      tip.textContent = "找到 " + hit.length + " 条相关结果：" + hit.slice(0,3).join("、") + (hit.length > 3 ? " 等" : "");
+    }else{
+      tip.textContent = "暂无「" + q + "」的直接结果，换个关键词试试，或前往专题企划浏览。";
+    }
+    tip.classList.add("is-on");
+  }
+  searchBtn.addEventListener("click", doSearch);
+  input.addEventListener("keydown", function(e){ if(e.key === "Enter"){ e.preventDefault(); doSearch(); } });
+  input.addEventListener("input", function(){ if(!input.value.trim()) tip.classList.remove("is-on"); });
+
+  /* 点赞 */
+  document.addEventListener("click", function(e){
+    var likeBtn = e.target.closest("[data-yxtp-like]");
+    if(likeBtn){
+      var base = parseInt(likeBtn.getAttribute("data-yxtp-like"), 10) || 0;
+      var b = likeBtn.querySelector("b");
+      var on = likeBtn.classList.toggle("is-on");
+      var num = on ? base + 1 : base;
+      if(b){ b.textContent = num.toLocaleString("en-US"); likeBtn.innerHTML = "♥ 点赞 <b>" + num.toLocaleString("en-US") + "</b>"; }
+      else { likeBtn.innerHTML = (on ? "♥" : "♡") + " " + (on ? "已赞" : "点赞"); }
+      if(on){ likeBtn.classList.add("is-on"); } else { likeBtn.classList.remove("is-on"); }
+      toast(on ? "已点赞，感谢支持原创内容" : "已取消点赞");
+      return;
+    }
+
+    /* 收藏 */
+    var favBtn = e.target.closest("[data-yxtp-fav]");
+    if(favBtn){
+      var fav = favBtn.classList.toggle("is-on");
+      favBtn.textContent = fav ? "★ 已收藏" : "☆ 收藏";
+      toast(fav ? "已加入收藏，可在个人中心查看" : "已取消收藏");
+      return;
+    }
+
+    /* 复制链接 */
+    var copyBtn = e.target.closest("[data-yxtp-copy]");
+    if(copyBtn){
+      var link = "https://yxtp-brand.example/video/42-xiangkou-yehua";
+      function fallbackCopy(){
+        var ta = document.createElement("textarea");
+        ta.value = link; ta.style.position = "fixed"; ta.style.opacity = "0";
+        document.body.appendChild(ta); ta.select();
+        try{ document.execCommand("copy"); toast("链接已复制到剪贴板"); }
+        catch(err){ toast("复制失败，请手动选择链接"); }
+        document.body.removeChild(ta);
+      }
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(link).then(function(){ toast("链接已复制到剪贴板"); }, fallbackCopy);
+      }else{ fallbackCopy(); }
+      return;
+    }
+
+    /* 作者资料 */
+    var authorBtn = e.target.closest("[data-yxtp-author]");
+    if(authorBtn){
+      openModal("创作者档案", "<p>" + authorBtn.getAttribute("data-yxtp-author") + "</p>", [{text:"关闭", ghost:true}]);
+      return;
+    }
+
+    /* 打开弹窗 */
+    var openBtn = e.target.closest("[data-yxtp-open]");
+    if(openBtn){
+      var kind = openBtn.getAttribute("data-yxtp-open");
+      if(kind === "submit"){
+        openModal("投稿入口", "<p>请简要描述你的作品方向，留下联系方式，编辑会在 3 个工作日内回复。</p><input id=\"yxtp-f-name\" type=\"text\" placeholder=\"你的昵称\"><input id=\"yxtp-f-link\" type=\"text\" placeholder=\"作品链接（可选）\"><textarea id=\"yxtp-f-desc\" rows=\"3\" placeholder=\"作品简介与创作说明\"></textarea>", [{text:"取消", ghost:true},{text:"提交", primary:true, action:function(){ closeModal(); toast("投稿已提交，请留意站内通知"); }}]);
+      }else if(kind === "share"){
+        openModal("分享这条内容", "<p>选择分享渠道，或复制链接发送给朋友。</p><div class=\"yxtp-share-row\"><button type=\"button\" data-yxtp-share=\"微信\">微信</button><button type=\"button\" data-yxtp-share=\"微博\">微博</button><button type=\"button\" data-yxtp-share=\"QQ\">QQ</button><button type=\"button\" data-yxtp-share=\"复制\">复制链接</button></div>", [{text:"关闭", ghost:true}]);
+      }else if(kind === "comment"){
+        openModal("发表评论", "<p>友善发言是社区的基本礼仪，请就内容本身表达观点。</p><textarea id=\"yxtp-c-text\" rows=\"3\" placeholder=\"说说你的看法…\"></textarea>", [{text:"取消", ghost:true},{text:"发布", primary:true, action:function(){ closeModal(); toast("评论已发布，审核后展示"); }}]);
+      }else if(kind === "report"){
+        openModal("反馈建议", "<p>告诉我们你遇到的问题或对平台的建议，官方运营团队会逐条查看。</p><textarea id=\"yxtp-r-text\" rows=\"3\" placeholder=\"问题描述或建议内容\"></textarea>", [{text:"取消", ghost:true},{text:"提交反馈", primary:true, action:function(){ closeModal(); toast("反馈已收到，感谢你的帮助"); }}]);
+      }
+      return;
+    }
+
+    /* 弹窗内分享按钮 */
+    var shareBtn = e.target.closest("[data-yxtp-share]");
+    if(shareBtn){
+      var ch = shareBtn.getAttribute("data-yxtp-share");
+      if(ch === "复制"){
+        var l = "https://yxtp-brand.example/video/42-xiangkou-yehua";
+        if(navigator.clipboard && navigator.clipboard.writeText){
+          navigator.clipboard.writeText(l).then(function(){ toast("链接已复制到剪贴板"); });
+        }else{ toast("请手动复制页面链接"); }
+      }else{
+        toast("已生成 " + ch + " 分享内容，请到对应客户端粘贴");
+      }
+      return;
+    }
+
+    /* 关闭弹窗 */
+    if(e.target.closest("[data-yxtp-close]") || e.target.id === "yxtp-modal"){
+      closeModal();
+    }
+  });
+
+  var modal = document.getElementById("yxtp-modal");
+  var modalTitle = document.getElementById("yxtp-modal-title");
+  var modalBody = document.getElementById("yxtp-modal-body");
+  var modalFoot = document.getElementById("yxtp-modal-foot");
+
+  function openModal(title, bodyHtml, buttons){
+    modalTitle.textContent = title;
+    modalBody.innerHTML = bodyHtml;
+    modalFoot.innerHTML = "";
+    (buttons || []).forEach(function(btn){
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "yxtp-btn" + (btn.ghost ? " yxtp-btn--ghost" : "");
+      b.textContent = btn.text;
+      if(btn.action){ b.addEventListener("click", btn.action); }
+      if(btn.ghost && !btn.action){ b.setAttribute("data-yxtp-close","1"); }
+      modalFoot.appendChild(b);
+    });
+    modal.classList.add("is-on");
+    modal.setAttribute("data-yxtp-src","1");
+  }
+  function closeModal(){
+    modal.classList.remove("is-on");
+    modal.removeAttribute("data-yxtp-src");
+  }
+  document.addEventListener("keydown", function(e){
+    if(e.key === "Escape" && modal.classList.contains("is-on")) closeModal();
+  });
+
+  /* 数据数字滚动 */
+  var counters = document.querySelectorAll("[data-yxtp-count]");
+  var done = false;
+  function runCounters(){
+    if(done) return;
+    done = true;
+    counters.forEach(function(el){
+      var target = parseInt(el.getAttribute("data-yxtp-count"), 10);
+      var suffix = "";
+      var raw = el.textContent.trim();
+      if(raw.indexOf("%") > -1) suffix = "%";
+      var start = 0, dur = 1100, t0 = null;
+      function step(ts){
+        if(!t0) t0 = ts;
+        var p = Math.min((ts - t0) / dur, 1);
+        var v = Math.floor(start + (target - start) * (1 - Math.pow(1 - p, 3)));
+        el.textContent = v.toLocaleString("en-US") + suffix;
+        if(p < 1) requestAnimationFrame(step);
+        else el.textContent = target.toLocaleString("en-US") + suffix;
+      }
+      requestAnimationFrame(step);
+    });
+  }
+  if("IntersectionObserver" in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){ if(en.isIntersecting){ runCounters(); io.disconnect(); } });
+    }, {threshold:.4});
+    io.observe(document.getElementById("yxtp-hero"));
+  }else{ runCounters(); }
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById("yxtp-top");
+  topBtn.addEventListener("click", function(){ window.scrollTo({top:0, behavior:"smooth"}); });
+  window.addEventListener("scroll", function(){
+    if(window.scrollY > 560) topBtn.classList.add("is-on");
+    else topBtn.classList.remove("is-on");
+  }, {passive:true});
+
+  /* 卡片悬停动效已由 CSS 实现；此处补充键盘可达性焦点样式 */
+  document.querySelectorAll(".yxtp-btn, .yxtp-ico").forEach(function(el){
+    el.addEventListener("focus", function(){ el.style.outline = "2px solid #ff4d6d"; el.style.outlineOffset = "2px"; });
+    el.addEventListener("blur", function(){ el.style.outline = ""; });
+  });
+})();
+</script>
+</body>
+            </html>
